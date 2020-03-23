@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TravelRecordApp.PostDetailPage">
+    <StackLayout Margin="16,20,16,0">
+        <Entry x:Name="experienceEntry"
+               TextColor="{StaticResource redColor}"/>
+        <Label x:Name="venueLabel"
+               Margin="0,30,0,0"
+               FontAttributes="Bold"
+               FontSize ="22"
+               Text="Some fancy coworking"
+               TextColor="{StaticResource redColor}"/>
+        <Label x:Name="categoryLabel"
+               Text="Coworking space"
+               TextColor="DarkSlateGray"/>
+        <Label x:Name="addressLabel"
+               Text="1234 Main Street, New York, NY"
+               TextColor="DarkSlateGray"
+               FontSize="15"/>
+        <Label x:Name="coordinatesLabel"
+               Text="132.12, 123.34"
+               TextColor="DarkSlateGray"
+               FontSize="15"/>
+        <Label x:Name="distanceLabel"
+               Text="123 m"
+               TextColor="DarkSlateGray"
+               FontSize="15"/>
+        <Button Text="Update"
+                x:Name="updateButton"
+                Clicked="updateButton_Clicked"
+                BackgroundColor="{StaticResource redColor}"
+                TextColor="{StaticResource whiteColor}"/>
+        <Button Text="Delete"
+                x:Name="deleteButton"
+                Clicked="deleteButton_Clicked"
+                BackgroundColor="{StaticResource redColor}"
+                TextColor="{StaticResource whiteColor}"/>
+    </StackLayout>
+</ContentPage>

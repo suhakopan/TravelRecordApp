@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:TravelRecordApp"
+             x:Class="TravelRecordApp.HomePage"
+             BarBackgroundColor="{StaticResource redColor}">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Add"
+                     Clicked="ToolbarItem_Clicked"
+                     IconImageSource="add.png"
+                     />
+    </TabbedPage.ToolbarItems>
+    <local:HistoryPage Title="Hıstory"
+                       IconImageSource="home.png"/>
+    <local:MapPage Title="Map"
+                   IconImageSource="map.png"/>
+    <local:ProfilePage Title="Profıle"
+                       IconImageSource="profile.png"/>
+</TabbedPage>
